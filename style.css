@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #0a72f6;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: #ff7f00;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .hero {
+    height: 90vh;
+    background: url('raphae\ tours.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #cc7a00;
+  }
+  .about-preview {
+    padding: 4rem 2rem;
+    background-color: #fff;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0066cc;
+  }
+  
+  .about-text p {
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
