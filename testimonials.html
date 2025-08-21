@@ -2,118 +2,202 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
-    <link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-</head>
-
-
+    <title>Client Testimonials - Raphae Tours</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-
-<header class="custom-header">
-    <!-- Left White Section -->
-    <div class="header-left">
-      <img src="./gallery/RT_half_Logo.jpg" alt="RaphaeTours" height="70" width="50">
-      <h1><span style="color:#0a72f6 ;" >Raphae</span> <span style="color: #ff9900;" >Tours</span> </h1>
-      
-    </div>
-  <img src="gallery/Untitled design.jpg" alt="swirl" height="250" width="450">
-      
-    
-  
-    <!-- Right Blue Section -->
-    <div class="header-right">
-      <nav>
-        
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="booking.html">Book Now</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  
-  <!-- Hero Section -->
-  
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      
-      <div class="testimonials-grid">
-        <article class="testi-card" style="--i:0" role="article" aria-label="Testimonial from Jane">
-          <img src="assets/img/testi1.jpg" alt="Jane Doe" class="testi-avatar">
-          <div class="testi-content">
-            <p class="testi-quote">“Raphae Tours handled everything — from the itinerary to local tips. Truly seamless and unforgettable.”</p>
-            <div class="testi-meta">
-              <h4 class="testi-name">Jane Doe</h4>
-              <div class="testi-stars" aria-hidden="true">★★★★★</div>
-              <div class="testi-location">— Lagos, Nigeria</div>
+    <!-- Header -->
+    <header class="modern-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <div class="brand-text">RaphaeTours</div>
             </div>
-          </div>
-        </article>
-  
-        <article class="testi-card" style="--i:1" role="article" aria-label="Testimonial from Ahmed">
-          <img src="assets/img/testi2.jpg" alt="Ahmed Bello" class="testi-avatar">
-          <div class="testi-content">
-            <p class="testi-quote">“Big thanks to the team — great guides and the food stops were perfect. Highly recommended!”</p>
-            <div class="testi-meta">
-              <h4 class="testi-name">Ahmed Bello</h4>
-              <div class="testi-stars" aria-hidden="true">★★★★★</div>
-              <div class="testi-location">— Abuja, Nigeria</div>
-            </div>
-          </div>
-        </article>
-  
-        <article class="testi-card" style="--i:2" role="article" aria-label="Testimonial from Maria">
-          <img src="assets/img/testi3.jpg" alt="Maria Okonkwo" class="testi-avatar">
-          <div class="testi-content">
-            <p class="testi-quote">“We felt safe and well-cared for. The small touches made the trip special — thank you Raphae!”</p>
-            <div class="testi-meta">
-              <h4 class="testi-name">Maria Okonkwo</h4>
-              <div class="testi-stars" aria-hidden="true">★★★★★</div>
-              <div class="testi-location">— Enugu, Nigeria</div>
-            </div>
-          </div>
-        </article>
-      </div>
-  
-      
-    </div>
-  </section>
-  <!-- Call to Action -->
-  <section class="cta-section text-white text-center p-5">
-    <h2>Want to be our next happy traveler?</h2>
-    <p>Let’s plan your next dream trip together.</p>
-    <a href="booking.html" class="bkg">Book Now</a>
-  </section>
-  
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 Raphae Tours. All rights reserved.</p>
-  </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="testimonials.html" class="nav-link active">Testimonials</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const currentPage = window.location.pathname.split("/").pop() || "index.html";
-      document.querySelectorAll("header nav ul li a").forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-          link.classList.add("active-page");
-        }
-      });
-    });
+            <a href="booking.html" class="cta-button">Book Now</a>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Success stories from travelers who trusted us with their dreams</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-quote">
+                        "RaphaeTours handled everything from the itinerary to local tips. The visa process was seamless and the team was incredibly professional throughout."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>Jane Doe</h4>
+                            <p>Lagos, Nigeria</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-quote">
+                        "Thanks to the team, my Global Talent visa was approved without any issues. The guides were amazing and the food stops were perfect!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AB</div>
+                        <div class="author-info">
+                            <h4>Ahmed Bello</h4>
+                            <p>Abuja, Nigeria</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-quote">
+                        "We felt safe and well-cared for throughout the entire process. The small touches made the experience special – thank you RaphaeTours!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MO</div>
+                        <div class="author-info">
+                            <h4>Maria Okonkwo</h4>
+                            <p>Enugu, Nigeria</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="section-container fade-in">
+            <h2 class="cta-title">Ready to Start Your Journey?</h2>
+            <p class="cta-subtitle">Let's plan your next dream trip together. Get in touch today!</p>
+            <a href="booking.html" class="btn-primary">Book Your Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>RaphaeTours</h3>
+                <p>Your trusted partner for visa applications, work permits, and unforgettable travel experiences worldwide.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 12 Seidu Ajibowu, Ikeja, Lagos</p>
+                <p><i class="fas fa-phone"></i> +234 816 329 5297</p>
+                <p><i class="fas fa-envelope"></i> smiles@raphae.tech</p>
+                <p><i class="fas fa-clock"></i> Mon - Fri: 9:00 - 17:00</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <p><a href="services.html#global-talent">Global Talent Visa</a></p>
+                <p><a href="services.html#ebniw">EBNIW Program</a></p>
+                <p><a href="services.html#o1-visa">O-1 Visa</a></p>
+                <p><a href="services.html#green-card">Green Card</a></p>
+                <p><a href="services.html#work-permit">Work Permit</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Destinations</h3>
+                <p><a href="#">United States</a></p>
+                <p><a href="#">United Kingdom</a></p>
+                <p><a href="#">Canada</a></p>
+                <p><a href="#">Australia</a></p>
+                <p><a href="#">Europe</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 RaphaeTours. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.modern-header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#ffffff';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
     </script>
-    
 </body>
 </html>
