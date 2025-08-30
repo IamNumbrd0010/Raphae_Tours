@@ -130,7 +130,7 @@ body {
 }
 
 /* Hero Section */
-/* .hero-section {
+.hero-section {
     height: 100vh;
     background: linear-gradient(135deg, rgba(10, 114, 246, 0.9), rgba(255, 153, 0, 0.8));
     background-size: cover;
@@ -142,9 +142,9 @@ body {
     color: var(--white);
     position: relative;
     overflow: hidden;
-} */
+}
 
-/* .hero-content {
+.hero-content {
     max-width: 800px;
     padding: 2rem;
     animation: fadeInUp 1s ease;
@@ -156,9 +156,9 @@ body {
     margin-bottom: 1.5rem;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     line-height: 1.2;
-} */
+}
 
-/* .hero-subtitle {
+.hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 2.5rem;
     opacity: 0.95;
@@ -170,32 +170,9 @@ body {
     gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
-} */
-.hero {
-    height: 90vh;
-    /* background: url('./gallery/raphae\ tours.png') no-repeat center center/cover; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-  }
+}
+
   
-  .hero-content {
-    background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
-    padding: 2rem;
-    border-radius: 10px;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
 .btn-primary {
     background: var(--gradient-secondary);
     color: var(--white);
